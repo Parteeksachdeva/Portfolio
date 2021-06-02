@@ -1,7 +1,7 @@
 import React ,{useState}from 'react'
 import "./Skills.css"
-import { FaCss3Alt,FaReact,FaGithubAlt,FaJava,FaBootstrap,FaStar,FaStarHalfAlt,FaRegStar} from 'react-icons/fa';
-import {SiJavascript,SiCodechef,SiMysql,SiMongodb} from "react-icons/si"
+import { FaCss3Alt,FaReact,FaGithubAlt,FaJava,FaStar,FaStarHalfAlt,FaRegStar} from 'react-icons/fa';
+import {SiJavascript,SiCodechef,SiMysql,SiMongodb,SiTailwindcss} from "react-icons/si"
 import {DiNodejs} from "react-icons/di"
 
 function Skills() {
@@ -102,7 +102,7 @@ function Skills() {
                     </div>
                     <div className="back__line"></div>
                     <p>Java</p></div></li>
-                <li className="skills__10 card"> <div className="card__front">{<FaBootstrap className="skills__icon" size={60}/>}</div><div className="card__back">
+                <li className="skills__10 card"> <div className="card__front">{<SiTailwindcss className="skills__icon" size={50}/>}</div><div className="card__back">
                     <div className="back__stars">
                         <FaStar />
                         <FaStar />
@@ -111,7 +111,7 @@ function Skills() {
                         <FaRegStar />
                     </div>
                     <div className="back__line"></div>
-                    <p>Bootstrap</p></div></li>
+                    <p>Tailwind CSS</p></div></li>
                
             </ul>
         </div>
