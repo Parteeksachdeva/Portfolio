@@ -20,18 +20,18 @@ export default function Contact() {
     const onsubmit=()=>{
         if(form.name || form.email || form.phoneNo || form.message){
             setEnv(true)
-            // emailjs.send('service_5nc23gg', 'template_69ntxpe', form, 'user_4jw9HAk4mlbuRIWIyH7sE')
-            //     .then((result) => {
-            //         console.log(result.text);
-            //     }, (error) => {
-            //         console.log(error.text);
-            //     });
-            //     emailjs.send('service_5nc23gg', 'template_eoo6eor', form, 'user_4jw9HAk4mlbuRIWIyH7sE')
-            //     .then((result) => {
-            //         console.log(result.text);
-            //     }, (error) => {
-            //         console.log(error.text);
-            //     });
+            emailjs.send('service_5nc23gg', 'template_69ntxpe', form, 'user_4jw9HAk4mlbuRIWIyH7sE')
+                .then((result) => {
+                    console.log(result.text);
+                }, (error) => {
+                    console.log(error.text);
+                });
+                emailjs.send('service_5nc23gg', 'template_eoo6eor', form, 'user_4jw9HAk4mlbuRIWIyH7sE')
+                .then((result) => {
+                    console.log(result.text);
+                }, (error) => {
+                    console.log(error.text);
+                });
             setError("");
         }
        
