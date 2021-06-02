@@ -1,7 +1,7 @@
 .skills{
     background-color: black;
-    width: 100vw;
-	height: 92vh;
+	height: 100vh;
+    padding-top: 50px;
     color: white;
     display: flex;
     justify-content: center;

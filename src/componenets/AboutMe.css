@@ -1,7 +1,9 @@
 .aboutMe{
     background-color: #ffffff;
+    height: 100vh;
     display: flex;
     flex-direction: column;
+    padding-top: 50px;
 }
 .aboutMe__header{
     display: flex;
