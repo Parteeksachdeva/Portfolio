@@ -1,0 +1,164 @@
+.skills{
+    background-color: black;
+    width: 100vw;
+	height: 92vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.skills>ul{
+    list-style: none;
+    transform: rotate(90deg);
+    color: black;
+}
+.skills>ul>li{
+    width: 110px;
+    height: 110px;
+    background-color: whitesmoke;
+    transform: rotate(45deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.skills>ul{
+    
+    display: grid;
+    grid-template-columns: repeat(4,60px);
+    grid-template-rows: repeat(7,60px);
+    grid-gap: 20px;
+    grid-template-areas: 
+    "first . . ."
+    ". second . ."
+    "ninth . third ."
+    ". eighth . fourth"
+    "tenth . fifth ."
+    ". sixth . ."
+    "seventh . . .";
+}
+.skills__1{
+    grid-area: first;
+   
+}
+.skills__icon{
+    color: grey;
+    transition: all 2s !important;
+    transform: rotate(225deg);
+}
+.skills__2{
+    grid-area: second;
+}
+.skills__3{
+    grid-area: third;
+}
+.skills__4{
+    grid-area: fourth;
+}
+.skills__5{
+    grid-area: fifth;
+}
+.skills__6{
+    grid-area: sixth;
+}
+.skills__7{
+    grid-area: seventh;
+}
+.skills__8{
+    grid-area: eighth;
+}
+.skills__9{
+    grid-area: ninth;
+}
+.skills__10{
+    grid-area: tenth;
+}
+.skills>ul>li{
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    
+    
+}
+.card:hover{
+    transform: rotateY(180deg) rotate(-45deg);
+}
+.card__front{
+    position: absolute;
+    backface-visibility: hidden;
+}
+.card__back{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transform: rotateY(180deg) rotate(225deg);
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+
+.back__line{
+    height: 2px;
+    width: 90%;
+    background-color: black;
+}
+.skills__github{
+    transition: all 1s !important;
+    background-color: rgba(128, 128, 128, 0.11) !important;
+}
+.skills__github:hover{
+    background-color: whitesmoke !important;
+    color: white;
+}
+.skills__icon-git{
+    transition: all 1s !important;
+    color: white;
+    transform: rotate(225deg);
+}
+.skills__github-icon{
+    
+    color: black;
+}
+@media screen and (max-width: 670px){
+    .skills{
+        height: auto;
+    }
+    .skills>ul{
+       /* grid-template-rows: 10;
+       grid-template-columns: 1;
+       grid-template-areas: 
+       "first"
+       "second"
+       "third"
+       "fourth"
+       "fifth"
+       "sixth"
+       "seventh"
+       "eighth"
+       "nineth"
+       "tenth"; */
+       grid: none;
+       display: flex;
+       flex-direction: column;
+       transform: none;
+
+    }
+    .skills>ul>li{
+        transform: none;
+        margin-top: 10px;
+    }
+    .skills__icon{
+        transform:none;
+    }
+    .skills__icon-git{
+        transform: none;
+    }
+    .card:hover{
+        transform: rotateY(180deg);
+    }
+    .card__back{
+        transform: rotateY(180deg);
+    }
+}
+
+

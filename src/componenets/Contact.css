@@ -1,0 +1,194 @@
+.envelope {
+    position: absolute;
+    left: 44.2%;
+    right: 50%;
+    top: 50%;
+    /* transform :translateY(-8rem); */
+    margin: auto;
+    animation: fadeInEnvelope 2s forwards;
+    animation-delay: 1.2s;
+  }
+  .envelope.front {
+    width: 10rem;
+    height: 6rem;
+    border-radius: 0 0 1rem 1rem;
+    overflow: hidden;
+    z-index: 9999;
+    opacity: 0;
+  }
+  .envelope.front::before, .envelope.front::after {
+    position: absolute;
+    display: block;
+    width: 12rem;
+    height: 6rem;
+    background-color: #e9dc9d;
+    transform: rotate(30deg);
+    transform-origin: 0 0;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    content: '';
+  }
+  .envelope.front::after{
+    right: 0;
+    transform: rotate(-30deg);
+    transform-origin: 100% 0;
+  }
+  /* .envelope.back {
+    top: -4rem;
+    width: 10rem;
+    height: 10rem;
+    overflow: hidden;
+    z-index: -9998;
+    opacity: 1;
+    transform: translateY(-6rem);
+  }
+  .envelope.back::before{
+    display: block;
+    width: 10rem;
+    height: 10rem;
+    background-color: #e9dc9d;
+    border-radius: 1rem;
+    content: '';
+    transform: scaleY(0.6) rotate(45deg)
+  } */
+  /* .result-message {
+    opacity: 1;
+    transition: all 0.3s 2s;
+    transform: translateY(9rem);
+    z-index: -9999;
+  } */
+
+
+
+.error{
+  background-color: gray !important;
+  border: none;
+}
+
+
+.contact{
+    height: 92vh;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.container{
+    height: 70vh;
+    width: 50vw;
+    background-color: white;
+    padding: 20px;
+    /* transform: translateY(-8rem) scale(0.2, 0.3); */
+    /* animation: scaleLetter 2s forwards; */
+    
+    animation: yourAnimationn 0.5s forwards  ease-in;
+}
+@keyframes yourAnimationn{
+  /* 0%{
+      transform: translateX(-50px);
+      opacity: 0;
+      }
+  100%{
+    transform: translateX(0px);
+      opacity: 1;
+  } */
+}
+.fold-env{
+    animation: scaleLetter 2s forwards;
+}
+.result-message{
+    position: absolute;
+    color: white;
+    opacity: 0;
+}
+.result-message-view{
+    animation: message 3s forwards;
+    animation-delay: 3s;
+}
+@keyframes message {
+    0% {opacity: 0; }
+    100% {opacity: 1; transform: translateY(-1rem);}
+  }
+@keyframes scaleLetter {
+    66% {transform: translateY(-8rem) scale(0.4, 0.4);}
+    75% {transform: translateY(-8rem) scale(0.4, 0.4);}
+    90% {transform: translateY(-8rem) scale(0.2, 0.3);}
+    97% {transform: translateY(-8rem) scale(0.22, 0.3);}
+    100%{transform: translateY(-8rem) scale(0.2, 0.3);}
+  }
+  @keyframes fadeInEnvelope {
+    0% {opacity: 0; }
+    100% {opacity: 1; transform: translateY(-8rem);}
+  }
+
+input{
+  border: none;
+  outline: none;
+  background-color: whitesmoke;
+  font-size: large;
+  padding: 15px;
+}
+  .container{
+      display: grid;
+      grid-template-rows: 2fr 1fr 1fr 2fr 1fr;
+      grid-gap: 2vh;
+  }
+  .container>h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .form__name{
+    outline: none;
+    
+  }
+  .form__details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  .form__details>input{
+    height: 100%;
+  }
+  .form__body{
+    border: none;
+    outline: none;
+    background-color: whitesmoke;
+    font-size: x-large;
+    padding: 15px;
+    resize: none;
+  }
+  .form__button{
+    background-color: blue;
+    color: whitesmoke;
+    padding: 15px;
+    cursor: pointer;
+  }
+  @media (max-width: 1020px){
+    .container{
+      background-color: black;
+      color: white;
+    }
+  }
+
+  @media (max-width: 680px){
+    .form__details{
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: 1fr;
+      
+    }
+    .form__details>input{
+      height: 100%;
+      width: 100%;
+    }
+    .container>h1{
+      justify-content: flex-start;
+    }
+    .contact{
+      justify-content: flex-start;
+    }
+   
+  }

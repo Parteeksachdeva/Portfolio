@@ -1,0 +1,188 @@
+ @import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed:400,700'); 
+
+/* body {
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+	overflow-x: hidden;
+} 
+
+ * {
+	box-sizing: border-box;
+}
+h1 {
+	font-family: 'Roboto Condensed', sans-serif;
+	/* text-transform: uppercase; */
+    /* font-size: 5.8em; */
+    /* line-height: 0.78;
+	margin: 2rem 0;
+  font-weight: 700; */
+  /* letter-spacing: -4px; 
+} */
+.bodyy{
+	overflow-x: hidden;
+}
+.first {
+	font-size: 3.1rem;
+}
+
+.japanese {
+	font-size: 1.8rem;
+	font-family: "Kozuka Gothic Pr6N";
+	padding-left: 20px;
+  letter-spacing: 0px;
+}
+
+.copy {
+    display: block;
+    float: left;
+	line-height: 1.5;
+	height: 105px;
+}
+
+p.copy:before {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 4px;
+    background-color: #000;
+    margin-bottom: 200px;
+    margin-right: 20px;
+    float: left;
+    position: relative;
+    top: 6px;
+}
+
+.content {
+	padding: 50px;
+	box-sizing: border-box;
+	min-height: 100vh;
+}
+
+#wrap {
+	min-height: 100vh;
+	width: 100vw;
+}
+
+#bar {
+	position: fixed;
+	bottom:0;
+	width: 80px;
+	height: 93vh;
+	background: #333;
+	background-image: url(https://jeffbredenkamp.neocities.org/bgBar-min.png);
+}
+
+.contentContainer {
+	max-width: 600px;
+	width: 100%;
+	background: #F8F8F8;
+	min-height: 100vh;
+	padding-left: 80px;
+	float: left;
+	background-image: url(https://jeffbredenkamp.neocities.org/bgGrey-min.png);
+}
+
+.imageContainer {
+	height: 100vh;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+}
+
+.image.odaImg {
+	background: url(https://www.theoplayer.com/hubfs/Blog/Encoding%20101%20-%20Thumbnail.png) top right no-repeat fixed;
+    background-size: cover;
+}
+
+.image.dateImg {
+	background: url(https://res.cloudinary.com/dt9okciwh/image/upload/v1591865148/mobapp/netflix-clone-development.png) top right no-repeat fixed;
+    background-size: cover;
+}
+
+.image.toyotomiImg {
+	background: url(https://d1m75rqqgidzqn.cloudfront.net/wp-data/2019/10/07200531/shutterstock_1266139540-1024x601.jpg) top right no-repeat fixed;
+    background-size: cover;
+}
+
+.image.uesugiImg {
+	background: url(https://www.freeprojectz.com/sites/default/files/1_13.jpg) top right no-repeat fixed;
+    background-size: cover;
+}
+
+nav ul {
+	list-style: none;
+	padding: 20px 0;
+	text-align: center;
+}
+
+nav ul li a {
+	color: #666666;
+	font-size: 1.3em;
+	text-align: center;
+	text-decoration: none;
+	font-weight: 700;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+.active {
+  color: #ffffff;
+}
+
+a.button {
+	color: #D93732;
+	font-size: 1.5em;
+	border-bottom: 4px solid #D93732;
+	text-decoration: none;
+	font-family: 'Roboto Condensed', sans-serif;
+	float: right;
+	margin-top: 50px;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+@media (max-width: 500px) {
+	h1 {
+    font-size: 4em;
+}
+
+h1 .first {
+    font-size: 2.2rem;
+}
+
+p.copy:before {
+    display: none;
+}
+
+.japanese {
+	display: none;
+}
+
+.imageContainer {
+	display: none;
+}
+
+#bar {
+    width: 50px;
+}
+
+#logo {
+    height: 50px;
+}
+
+.contentContainer {
+    padding-left: 70px;
+	float: none;
+}
+
+.content {
+    padding: 20px;
+}
+} 
+
+.buttons{
+	
+	display: flex;
+	justify-content: space-around;
+}

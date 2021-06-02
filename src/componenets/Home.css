@@ -1,0 +1,112 @@
+.body{
+    width: 100vw;
+    min-height: 92vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    
+}
+.body__hi:hover,.body__name:hover{
+    transform: scale(1.01);
+}
+.body>img{
+    object-fit: contain;
+    height: 50vh;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.body__hi{
+    display: flex;
+    z-index: 1;
+}
+.body__hi>h1{
+    font-family: 'segoe ui';
+    color: whitesmoke;
+    margin-right: 5px;
+    font-size: 3vw;
+}
+.body__name{
+    display: flex;
+    font-size: 4vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    z-index: 1;
+}
+.body__name>h1{
+    color: whitesmoke;
+    margin-right: 15px;
+}
+.red{
+    color: brown !important;
+}
+.body__type{
+    display: flex;
+    font-size: 2vw;
+    color: rgb(29, 132, 216);
+    z-index: 1;
+}
+.body__type>p{
+    color: white  !important;
+    margin-right: 10px;
+}
+.body__background{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left:5vw;
+    top:200px;
+    width: 200px;
+    height: 200px;
+    /* border: brown 100px solid; */
+    background-color: brown;
+    border-radius: 100%;
+   transition: border 0.5s;
+   animation: yourAnimation 3s forwards ease;
+}
+.body__background>p{
+    color: white;
+    font-size: x-large;
+}
+.body__background:hover{
+    border: rgb(29, 132, 216) 100px solid;
+}
+@keyframes yourAnimation{
+    0%{
+        transform: scale(0)
+        }
+    100%{
+        transform:  scale(1)
+        }
+}
+
+@media screen and (max-width: 605px){
+    /* .body>img{
+        position: absolute;
+        left: 50%;
+        height: 40vh;
+    } */
+    .body>img{
+       display: none;
+    }
+    .body__background{
+        display: none;
+    }
+}
+@media screen and (max-width: 500px){
+    /* .body>img{
+        
+        height: 40vh;
+    } */
+    .body__name{
+        font-size: 2vw;
+    }
+}
+@media screen and (min-width: 1700px){
+    .body{
+        height: 98vh;
+    }
+}
