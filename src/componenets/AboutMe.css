@@ -116,4 +116,11 @@
     .body__right{
         display: none;
     }
+
+    
+}
+@media screen and (max-width: 650x){
+    .body__right{
+       display: none;
+    }
 }
