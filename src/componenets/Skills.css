@@ -82,6 +82,9 @@
 .card:hover{
     transform: rotateY(180deg) rotate(-45deg);
 }
+.card__git{
+    transform: rotate(360deg) !important;
+}
 .card__front{
     position: absolute;
     backface-visibility: hidden;
@@ -107,6 +110,7 @@
 .skills__github{
     transition: all 1s !important;
     background-color: rgba(128, 128, 128, 0.11) !important;
+    
 }
 .skills__github:hover{
     background-color: whitesmoke !important;

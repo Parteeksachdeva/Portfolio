@@ -45,7 +45,7 @@ function Skills() {
                     <p>React</p></div></li>
 
 
-                <li className="skills__4 skills__github" onMouseEnter={()=>{setGithub(true)}} onMouseLeave={()=>{setGithub(false)}}> <div className="card__front">{<FaGithubAlt className={`skills__icon-git ${github && "skills__github-icon"}`} size={50}/>}</div></li>
+                <li className="skills__4 skills__github" onMouseEnter={()=>{setGithub(true)}} onMouseLeave={()=>{setGithub(false)}}> <div className="card__front card__git">{<FaGithubAlt className={`skills__icon-git ${github && "skills__github-icon"}`} size={50}/>}</div></li>
 
 
                 <li className="skills__5 card"> <div className="card__front">{<DiNodejs className="skills__icon" size={60}/>}</div>
@@ -98,7 +98,7 @@ function Skills() {
                         <FaStar />
                         <FaStar />
                         <FaStar />
-                        <FaRegStar />
+                        <FaStarHalfAlt />
                     </div>
                     <div className="back__line"></div>
                     <p>Java</p></div></li>
