@@ -48,16 +48,27 @@
 .body__right>img{
     object-fit: contain;
     width: 150px;
-    animation: ease-out alternate 1s 0.7s myani;
+    animation: ease-in-out alternate 1s myani;
 }
 @keyframes myani {
+    0%{
+        transform: scale(0);
+    }
+    80%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+/* @keyframes myani {
     from{
         transform: skew(25deg,30deg);
     }
     to{
         transform: skew(-4deg,-4deg);
     }
-}
+} */
 .content__links{
     display: flex;
 }
@@ -72,6 +83,10 @@
     justify-content: center;
     color: #ffffff;
     cursor: pointer;
+}
+.content__links>div:hover{
+    transform: scale(1.1);
+    border: 1px solid black;
 }
 .body__content>h1{
     font-weight: 700;

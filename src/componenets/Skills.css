@@ -43,8 +43,9 @@
 .skills__icon{
     color: grey;
     transition: all 2s !important;
-    transform: rotate(225deg);
+    /* transform: rotate(225deg); */
 }
+
 .skills__2{
     grid-area: second;
 }
@@ -84,6 +85,7 @@
 .card__front{
     position: absolute;
     backface-visibility: hidden;
+    transform: rotate(225deg);
 }
 .card__back{
     height: 100%;
@@ -158,6 +160,7 @@
     }
     .card__back{
         transform: rotateY(180deg);
+        
     }
 }
 
