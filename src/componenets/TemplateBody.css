@@ -93,6 +93,7 @@ p.copy:before {
 }
 
 .image.odaImg {
+	/* https://www.theoplayer.com/hubfs/Blog/Encoding%20101%20-%20Thumbnail.png */
 	background: url(https://www.matrox.com/sites/default/files/video_pad_icon.png) top right no-repeat fixed;
     background-size: cover;
 }

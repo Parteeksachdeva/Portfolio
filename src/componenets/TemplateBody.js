@@ -62,7 +62,7 @@ function TemplateBody() {
         <p className="copy">Path-finding-visualizer is built in <b>REACTJs</b> with the help of <b>A* algorithm</b>.Used to find the shortest path between two nodes.
 
         <div className="buttons"><a href="https://github.com/Parteeksachdeva/pathfinder" target="_blank" className="button">Github</a>
-        <a href="https://pathfinders.vercel.app/" target="_blank" className="button">Live Demo</a>
+        <a href="https://pathfinders-n2zus0x6g-parteeksachdeva.vercel.app/" target="_blank" className="button">Live Demo</a>
         </div></p>
       </div>
     </div>
